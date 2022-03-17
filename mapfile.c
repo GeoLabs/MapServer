@@ -5904,12 +5904,12 @@ int msSaveConfig(configObj *config, const char *filename)
   FILE *stream;
 
   if(!config) {
-    msSetError(MS_MISCERR, "Config is undefined.", "msSaveConfigMap()");
+    msSetError(MS_MISCERR, "Config is undefined.", "msSaveConfig()");
     return(-1);
   }
 
   if(!filename) {
-    msSetError(MS_MISCERR, "Filename is undefined.", "msSaveConfigMap()");
+    msSetError(MS_MISCERR, "Filename is undefined.", "msSaveConfig()");
     return(-1);
   }
 
